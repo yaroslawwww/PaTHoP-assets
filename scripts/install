@@ -1,0 +1,4 @@
+sshpass -p "M7fe6?IT" ssh -p 2222 ikvasilev@cluster.hpc.hse.ru << EOF
+source /home/ikvasilev/my_env/bin/activate
+pip install numpy tqdm pandas matplotlib seaborn scipy scikit-learn matplotlib threadpoolctl
+EOF

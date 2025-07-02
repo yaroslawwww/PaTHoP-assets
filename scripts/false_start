@@ -1,0 +1,3 @@
+sshpass -p "M7fe6?IT" ssh -p 2222 ikvasilev@cluster.hpc.hse.ru << EOF
+scancel -u ikvasilev
+EOF

@@ -1,0 +1,2 @@
+sshpass -p "M7fe6?IT" scp -P 2222 ikvasilev@cluster.hpc.hse.ru:/home/ikvasilev/PaTHoP/logs/*$1* /home/yarik/Gromov/PaTHoP/logs
+cat /home/yarik/Gromov/PaTHoP/logs/*$1*

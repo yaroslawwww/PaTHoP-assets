@@ -1,0 +1,11 @@
+pip freeze > /home/yarik/Gromov/PaTHoP/mysrc/requirements.txt
+#./scripts/false_start
+rsync -avz --exclude='.git' --exclude='labels' --exclude='results' --exclude='logs' -e 'sshpass -p "M7fe6?IT" ssh -p 2222' /home/yarik/Gromov/ ikvasilev@cluster.hpc.hse.ru:/home/ikvasilev/
+sshpass -p "M7fe6?IT" ssh -p 2222 ikvasilev@cluster.hpc.hse.ru << EOF
+cd PaTHoP/mysrc
+chmod +x *
+source /home/ikvasilev/my_env/bin/activate
+./main_bash 0 10 10000 1 0
+EOF
+
+#pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
