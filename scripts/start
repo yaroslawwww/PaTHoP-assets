@@ -1,8 +1,7 @@
-
 if [[ "$1" == "kill" ]]; then
     /home/yarik/Gromov/PaTHoP/assets/scripts/false_start
 fi
-rsync -avz  -e 'sshpass -p "M7fe6?IT" ssh -p 2222' /home/yarik/Gromov/PaTHoP ikvasilev@cluster.hpc.hse.ru:/home/ikvasilev/PaTHoP
+rsync -avz  -e 'sshpass -p "M7fe6?IT" ssh -p 2222' /home/yarik/Gromov/PaTHoP ikvasilev@cluster.hpc.hse.ru:/home/ikvasilev
 
 sshpass -p "M7fe6?IT" ssh -p 2222 ikvasilev@cluster.hpc.hse.ru << EOF
 cd PaTHoP/mysrc
@@ -10,4 +9,3 @@ chmod +x *
 source /home/ikvasilev/my_env/bin/activate
 ./main_bash
 EOF
-

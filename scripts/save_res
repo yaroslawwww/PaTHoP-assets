@@ -1,1 +1,1 @@
-sshpass -p "M7fe6?IT" scp -P 2222 ikvasilev@cluster.hpc.hse.ru:/home/ikvasilev/PaTHoP/assets/results/* /home/yarik/Gromov/PaTHoP/results
+ sshpass -p "M7fe6?IT" rsync -e "ssh -p 2222" -av --backup --backup-dir=/home/yarik/Gromov/PaTHoP/assets/subbackups ikvasilev@cluster.hpc.hse.ru:/home/ikvasilev/PaTHoP/assets/results/ /home/yarik/Gromov/PaTHoP/assets/results
