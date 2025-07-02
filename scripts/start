@@ -1,6 +1,6 @@
-#./scripts/false_start
+
 if [[ "$1" == "kill" ]]; then
-    ./scripts/false_start
+    /home/yarik/Gromov/PaTHoP/assets/scripts/false_start
 fi
 rsync -avz  -e 'sshpass -p "M7fe6?IT" ssh -p 2222' /home/yarik/Gromov/PaTHoP ikvasilev@cluster.hpc.hse.ru:/home/ikvasilev/PaTHoP
 
