@@ -9,5 +9,5 @@ ikvasilev@cluster.hpc.hse.ru:/home/ikvasilev
 sshpass -p "M7fe6?IT" ssh -p 2222 ikvasilev@cluster.hpc.hse.ru << EOF
 cd PaTHoP/mysrc
 chmod +x *
-./main_bash
+./main_bash.sh
 EOF
