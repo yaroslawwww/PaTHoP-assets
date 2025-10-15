@@ -1,0 +1,17 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Введение}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Изучение системы Лоренца}{4}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Визуальный анализ и характеристика данных}{5}{section.2}%
+\contentsline {section}{\numberline {3}Обзор литературы}{5}{section.3}%
+\contentsline {section}{\numberline {4}Основная часть: Эксперименты и результаты}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Эксперимент 1: Влияние размера и состава обучающей выборки}{7}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Описание эксперимента}{7}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Анализ результатов}{7}{subsubsection.4.1.2}%
+\contentsline {paragraph}{Анализ случаев улучшения метрик (Рис. \ref {fig:main_exp}):}{7}{section*.6}%
+\contentsline {paragraph}{Анализ случаев ухудшения метрик (Рис. \ref {fig:unlucky_exp}):}{7}{section*.7}%
+\contentsline {subsection}{\numberline {4.2}Эксперимент 2: Прогноз без использования основного ряда}{10}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Описание эксперимента}{10}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Анализ результатов}{10}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Эксперимент 3: Систематическое исследование параметра r}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Эксперимент 4: Анализ смещения центроидов}{10}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Заключение}{10}{section.5}%
