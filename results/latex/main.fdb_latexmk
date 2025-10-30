@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1760654901.14825 -1
-  "main.bcf" 1760654900.99587 108521 3751e48e54a72c5dcfe68fe890bdabc0 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1761610926.74644 -1
+  "main.bcf" 1761610926.52921 108521 3751e48e54a72c5dcfe68fe890bdabc0 "pdflatex"
   "refs.bib" 1760649410.36727 2917 f3362e3470e490872ba0eb1b9c56a215 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1760654893.03327 "/home/yarik/Gromov/PaTHoP/assets/results/latex/main.tex" "main.pdf" "main" 1760654901.14853 0
+["pdflatex"] 1761610912.6028 "/home/yarik/Gromov/PaTHoP/assets/results/latex/main.tex" "main.pdf" "main" 1761610926.74695 0
   "../Size_experiment/metrics_vs_general_size_best_experiments.png" 1758250965.09057 1446526 73531588311b8b8d52eaa063d137bb63 ""
   "../Size_experiment/metrics_vs_general_size_best_experiments_2.png" 1758494326 1171948 dff7f67ffd03156a83f41c60bc1f2185 ""
   "../Size_experiment/unlucky_experiments.png" 1757807284.88061 1181433 0795a1927914798ac32d66ab31bfebae ""
@@ -22,7 +22,7 @@
   "/home/yarik/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/larm2488.tfm" 1760652827.47705 3264 102508a989355317d27912fb22a38399 ""
   "/home/yarik/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/latt1200.tfm" 1758498086.34984 1272 bf3bb5cc29880b269c8bcb412a1ac6e2 ""
   "/home/yarik/Gromov/PaTHoP/assets/results/Daemon/daempon_apr.png" 1760644604.14394 1496261 46d914e9f7b6c1243e7fa2b835c7fb71 ""
-  "/home/yarik/Gromov/PaTHoP/assets/results/latex/main.tex" 1760654886.72829 78722 e3575688635aea22ef6c1dab98de8797 ""
+  "/home/yarik/Gromov/PaTHoP/assets/results/latex/main.tex" 1761610711.73175 49109 29c2955b68e1c7523ce2857be8a560cb ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -250,12 +250,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1758497031.77148 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758497140 8215432 d8dbf4ad16966c082be3984b70816524 ""
-  "main.aux" 1760654900.99436 13100 6adc316c0bc7efaadfa1330ec0b061a5 "pdflatex"
+  "main.aux" 1761610926.52421 10486 1d036e45bbbbd0ad22d312ac490487da "pdflatex"
   "main.bbl" 1760653923.47359 14639 acef1225327010c1c4df3727a5626b21 "biber main"
-  "main.run.xml" 1760654900.99777 2330 844a6fa6e4d9b9c4d078cd80b150fbc1 "pdflatex"
-  "main.tex" 1760654886.72829 78722 e3575688635aea22ef6c1dab98de8797 ""
-  "main.toc" 1760654900.99777 4350 6ed5450befb9c14103eec89bfe892a86 "pdflatex"
-  "title_kr.tex" 1760654639.96508 1287 99c01bb970b13f2465139bd2bf3ddc56 ""
+  "main.run.xml" 1761610926.5316 2330 844a6fa6e4d9b9c4d078cd80b150fbc1 "pdflatex"
+  "main.tex" 1761610711.73175 49109 29c2955b68e1c7523ce2857be8a560cb ""
+  "main.toc" 1761610926.5316 3368 7f5ca557aedd22eb403d7d20fd5cf815 "pdflatex"
+  "title_kr.tex" 1761610909.03134 947 5b73d6c8e2a9509f070934ba9c145827 ""
   (generated)
   "main.aux"
   "main.bcf"

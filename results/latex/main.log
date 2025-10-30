@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.22)  17 OCT 2025 01:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.22)  28 OCT 2025 03:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1237,112 +1237,169 @@ Package hyperref Info: Link coloring ON on input line 53.
 LaTeX Font Warning: Font shape `T2A/ptm/b/n' undefined
 (Font)              using `T2A/ptm/m/n' instead on input line 7.
 
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 16.
+
+Underfull \hbox (badness 1728) in paragraph at lines 14--15
+[]\T2A/ptm/b/n/14.4 Ключевые сло-ва: Prediction, predictability horizon, machine
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 15.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 16.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 15.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 16.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 15.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 16.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 15.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 16.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 15.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}])
+Overfull \hbox (2.2435pt too wide) in paragraph at lines 56--67
+\T2A/ptm/m/n/12 demonstrating that this approach allows for a significant reduction in the number of non-predictable
+ []
+
+
+Overfull \hbox (3.84242pt too wide) in paragraph at lines 68--70
+[]\T2A/ptm/m/n/12 Chaotic time series forecasting, Lorenz system, training sample augmentation, motif method,
+ []
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 \newpage
+l.71 \newpage
               [1] (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2] [3{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}] [4]
-
-LaTeX Font Warning: Font shape `T2A/ptm/m/it' undefined
-(Font)              using `T2A/ptm/m/n' instead on input line 177.
-
-[5] [6]
-Overfull \hbox (20.63887pt too wide) in paragraph at lines 273--280
-\T2A/ptm/m/it/12 ся как мо-ти-вы. Мо-ти-вом, со-от-вет-ству-ю-щим шаб-ло-ну $[]$, на-зы-ва-ет-ся век-тор $\OML/ztmcm/m/it/12 C[] \OT1/ztmcm/m/n/12 = (\OML/ztmcm/m/it/12 ^^Q[]; ^^Q[]; [] ; ^^Q[]\OT1/ztmcm/m/n/12 )$\T2A/ptm/m/it/12 ,
+ [2]
+Overfull \hbox (3.12192pt too wide) in paragraph at lines 113--116
+[]\T2A/ptm/b/n/12 To rigorously test this hypothesis, the Lorenz system was chosen as a controlled environment,
  []
 
-[7] [8] [9] [10] [11] [12]
-<../dtw/rows.png, id=190, 1084.05pt x 1300.86pt>
+[3{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+Overfull \hbox (8.11833pt too wide) in paragraph at lines 127--134
+\T2A/ptm/b/n/12 coherence of the text, to paraphrase complex academic constructions to enhance clarity of exposition,
+ []
+
+[4]
+
+LaTeX Font Warning: Font shape `T2A/ptm/m/it' undefined
+(Font)              using `T2A/ptm/m/n' instead on input line 175.
+
+
+Overfull \hbox (0.28447pt too wide) in paragraph at lines 172--179
+\T2A/ptm/m/it/12 data scarcity conditions. We consider a situation where a set of time series $\OMS/ztmcm/m/n/12 Y \OT1/ztmcm/m/n/12 = \OMS/ztmcm/m/n/12 f\OML/ztmcm/m/it/12 Y[]; Y[]; [] ; Y[]\OMS/ztmcm/m/n/12 g$
+ []
+
+
+Overfull \hbox (10.57298pt too wide) in paragraph at lines 184--186
+[]\T2A/ptm/m/it/12 Each series satisfies the conditions of Takens' theorem[[][]10[][]], which makes a correct reconstruction
+ []
+
+[5] [6] [7] [8] [9] [10] [11]
+Overfull \hbox (20.26746pt too wide) in paragraph at lines 465--467
+[]\T2A/ptm/m/it/12 Qualitative changes that occur at bifurcation points. At these points, a fundamental restructuring
+ []
+
+
+Overfull \hbox (0.11855pt too wide) in paragraph at lines 471--474
+[]\T2A/ptm/m/it/12 Figure [][]4.1[][] shows segments of trajectories illustrating precisely these quantitative differences.
+ []
+
+<../dtw/rows.png, id=183, 1084.05pt x 1300.86pt>
 File: ../dtw/rows.png Graphic file (type png)
 <use ../dtw/rows.png>
-Package pdftex.def Info: ../dtw/rows.png  used on input line 478.
+Package pdftex.def Info: ../dtw/rows.png  used on input line 477.
 (pdftex.def)             Requested size: 497.92325pt x 597.50964pt.
- [13] [14 <../dtw/rows.png>] [15]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 579.
+[12] [13 <../dtw/rows.png>] [14]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 576.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<../Size_experiment/metrics_vs_general_size_best_experiments.png, id=210, 867.24pt x 1300.86pt>
+<../Size_experiment/metrics_vs_general_size_best_experiments.png, id=205, 867.24pt x 1300.86pt>
 File: ../Size_experiment/metrics_vs_general_size_best_experiments.png Graphic file (type png)
 <use ../Size_experiment/metrics_vs_general_size_best_experiments.png>
-Package pdftex.def Info: ../Size_experiment/metrics_vs_general_size_best_experiments.png  used on input line 592.
+Package pdftex.def Info: ../Size_experiment/metrics_vs_general_size_best_experiments.png  used on input line 589.
 (pdftex.def)             Requested size: 398.3401pt x 597.50964pt.
- [16] [17 <../Size_experiment/metrics_vs_general_size_best_experiments.png>]
-<../Size_experiment/unlucky_experiments.png, id=224, 867.24pt x 1300.86pt>
+<../Size_experiment/unlucky_experiments.png, id=208, 867.24pt x 1300.86pt>
 File: ../Size_experiment/unlucky_experiments.png Graphic file (type png)
 <use ../Size_experiment/unlucky_experiments.png>
-Package pdftex.def Info: ../Size_experiment/unlucky_experiments.png  used on input line 616.
+Package pdftex.def Info: ../Size_experiment/unlucky_experiments.png  used on input line 613.
 (pdftex.def)             Requested size: 398.3401pt x 597.50964pt.
- [18] [19 <../Size_experiment/unlucky_experiments.png>]
-<../deviations/Р Р°Р·РЅС‹Рµ_r.png, id=239, 722.7pt x 867.24pt>
+ [15] [16 <../Size_experiment/metrics_vs_general_size_best_experiments.png>] [17 <../Size_experiment/unlucky_experiments.png>] [18]
+<../deviations/Р Р°Р·РЅС‹Рµ_r.png, id=234, 722.7pt x 867.24pt>
 File: ../deviations/Р Р°Р·РЅС‹Рµ_r.png Graphic file (type png)
 <use ../deviations/Р Р°Р·РЅС‹Рµ_r.png>
-Package pdftex.def Info: ../deviations/Р Р°Р·РЅС‹Рµ_r.png  used on input line 680.
+Package pdftex.def Info: ../deviations/Р Р°Р·РЅС‹Рµ_r.png  used on input line 676.
 (pdftex.def)             Requested size: 398.3401pt x 478.00243pt.
- [20] [21 <../deviations/Р Р°Р·РЅС‹Рµ_r.png>]
-<../centroids_diff/plot_avg_distance.png, id=253, 867.24pt x 578.16pt>
+ [19] [20 <../deviations/Р Р°Р·РЅС‹Рµ_r.png>]
+<../centroids_diff/plot_avg_distance.png, id=248, 867.24pt x 578.16pt>
 File: ../centroids_diff/plot_avg_distance.png Graphic file (type png)
 <use ../centroids_diff/plot_avg_distance.png>
-Package pdftex.def Info: ../centroids_diff/plot_avg_distance.png  used on input line 724.
+Package pdftex.def Info: ../centroids_diff/plot_avg_distance.png  used on input line 719.
 (pdftex.def)             Requested size: 398.3401pt x 265.55983pt.
- [22 <../centroids_diff/plot_avg_distance.png>]
-</home/yarik/Gromov/PaTHoP/assets/results/Daemon/daempon_apr.png, id=261, 867.24pt x 1300.86pt>
+</home/yarik/Gromov/PaTHoP/assets/results/Daemon/daempon_apr.png, id=250, 867.24pt x 1300.86pt>
 File: /home/yarik/Gromov/PaTHoP/assets/results/Daemon/daempon_apr.png Graphic file (type png)
 <use /home/yarik/Gromov/PaTHoP/assets/results/Daemon/daempon_apr.png>
-Package pdftex.def Info: /home/yarik/Gromov/PaTHoP/assets/results/Daemon/daempon_apr.png  used on input line 762.
+Package pdftex.def Info: /home/yarik/Gromov/PaTHoP/assets/results/Daemon/daempon_apr.png  used on input line 742.
 (pdftex.def)             Requested size: 398.3401pt x 597.50964pt.
-<../Size_experiment/metrics_vs_general_size_best_experiments_2.png, id=263, 867.24pt x 1300.86pt>
+ [21 <../centroids_diff/plot_avg_distance.png>]
+Overfull \hbox (14.3067pt too wide) in paragraph at lines 747--748
+ []\T2A/ptm/m/it/12 Analysis of Results[] The results of this experiment (Figure [][]5.5[][]) fully confirmed the conclusions
+ []
+
+<../Size_experiment/metrics_vs_general_size_best_experiments_2.png, id=259, 867.24pt x 1300.86pt>
 File: ../Size_experiment/metrics_vs_general_size_best_experiments_2.png Graphic file (type png)
 <use ../Size_experiment/metrics_vs_general_size_best_experiments_2.png>
-Package pdftex.def Info: ../Size_experiment/metrics_vs_general_size_best_experiments_2.png  used on input line 788.
+Package pdftex.def Info: ../Size_experiment/metrics_vs_general_size_best_experiments_2.png  used on input line 758.
 (pdftex.def)             Requested size: 398.3401pt x 597.50964pt.
- [23] [24 </home/yarik/Gromov/PaTHoP/assets/results/Daemon/daempon_apr.png>] [25 <../Size_experiment/metrics_vs_general_size_best_experiments_2.png>] [26] [27]
-Overfull \hbox (32.47209pt too wide) in paragraph at lines 843--843
+
+Overfull \hbox (18.03497pt too wide) in paragraph at lines 766--767
+[]\T2A/ptm/m/it/12 This work has successfully addressed a fundamental problem in forecasting chaotic systems^^Vthe
+ []
+
+[22] [23 </home/yarik/Gromov/PaTHoP/assets/results/Daemon/daempon_apr.png>] [24 <../Size_experiment/metrics_vs_general_size_best_experiments_2.png>]
+Overfull \hbox (1.22385pt too wide) in paragraph at lines 772--773
+[]\T2A/ptm/m/it/12 This phenomenon demonstrates the inadequacy of standard global similarity metrics (DTW,
+ []
+
+
+Overfull \hbox (1.72655pt too wide) in paragraph at lines 774--775
+\T2A/ptm/m/it/12 biomedical signals, or the study of energy consumption patterns [[][]9[][]], where obtaining long stationary
+ []
+
+[25] [26]
+Overfull \hbox (32.47209pt too wide) in paragraph at lines 780--780
 []\T2A/ptm/m/it/12 Vasilii A. Gromov и Philip S. Baranov. ``Prediction after a Horizon of Predictability: Nonpredictable
  []
 
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 843.
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 780.
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Overfull \hbox (11.13812pt too wide) in paragraph at lines 843--843
+Overfull \hbox (11.13812pt too wide) in paragraph at lines 780--780
 []\T2A/ptm/m/it/12 F. Takens. ``Detecting strange attractors in turbulence''. В: Dynamical Systems and Turbulence.
  []
 
-[28] (./main.aux)
+[27] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1356,18 +1413,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34432 strings out of 474222
- 637845 string characters out of 5748733
- 1940975 words of memory out of 5000000
- 56007 multiletter control sequences out of 15000+600000
+ 34434 strings out of 474222
+ 637883 string characters out of 5748733
+ 1939975 words of memory out of 5000000
+ 56010 multiletter control sequences out of 15000+600000
  590228 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,93p,815b,1766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,93p,818b,1766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (29 pages, 6559836 bytes).
+Output written on main.pdf (28 pages, 6546559 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 119 named destinations out of 1000 (max. 500000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 318 compressed objects within 4 object streams
+ 118 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
