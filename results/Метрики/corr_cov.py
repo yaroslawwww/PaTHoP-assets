@@ -10,8 +10,8 @@ main_rho = 28.0
 highlight_rhos = [28.0, 28.0001, 27.99, 27.9, 28.01, 28.1, 30, 38]
 rho_values_extended = np.array(highlight_rhos)
 
-num_points = 50000
-warmup = 10000
+num_points = 20000
+warmup = 0
 grid_points = 1000
 x_range = [-20, 20]
 

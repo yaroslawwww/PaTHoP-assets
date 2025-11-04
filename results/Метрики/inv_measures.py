@@ -19,8 +19,8 @@ rho_values_extended = np.unique(np.concatenate([rho_base, [28,28.0001, 27.99, 27
 rho_values_for_comparison = rho_values_extended
 highlight_rhos = [28,28.0001, 27.99, 27.9, 28.01,28.1,30,38]
 
-num_points = 50000
-warmup = 10000
+num_points = 20000
+warmup = 0
 grid_points = 1000
 x_range = [-20, 20]
 
