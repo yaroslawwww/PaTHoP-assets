@@ -13,8 +13,8 @@ metrics = {
     2: "MAPE"
 }
 
-best_data = {i: load_col('best.txt', i) for i in metrics}
-random_data = {i: load_col('random.txt', i) for i in metrics}
+best_data = {i: load_col('best_validation.txt', i) for i in metrics}
+random_data = {i: load_col('random_validation.txt', i) for i in metrics}
 
 alpha = 0.05
 
