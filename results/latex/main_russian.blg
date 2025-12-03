@@ -1,17 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main_russian.blg'
-[84] biber:340> INFO - === Ср ноя  5, 2025, 08:53:11
-[100] Biber.pm:419> INFO - Reading 'main_russian.bcf'
-[165] Biber.pm:979> INFO - Found 12 citekeys in bib section 0
-[178] Biber.pm:4419> INFO - Processing section 0
-[190] Biber.pm:4610> INFO - Looking for bibtex file 'refs.bib' for section 0
-[191] bibtex.pm:1713> INFO - LaTeX decoding ...
-[202] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
-[316] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
-[316] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[316] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'ru-RU'
-[316] Biber.pm:4245> INFO - No sort tailoring available for locale 'ru-RU'
-[334] bbl.pm:660> INFO - Writing 'main_russian.bbl' with encoding 'UTF-8'
-[339] bbl.pm:763> INFO - Output to main_russian.bbl
-[340] Biber.pm:131> WARN - legacy month field 'sep' in entry 'Berardi2018' is not an integer - this will probably not sort properly.
-[340] Biber.pm:133> INFO - WARNINGS: 1
+[90] biber:340> INFO - === Пн ноя 17, 2025, 18:49:29
+[105] Biber.pm:419> INFO - Reading 'main_russian.bcf'
+[164] Biber.pm:979> INFO - Found 10 citekeys in bib section 0
+[176] Biber.pm:4419> INFO - Processing section 0
+[187] Biber.pm:4610> INFO - Looking for bibtex file 'refs.bib' for section 0
+[189] bibtex.pm:1713> INFO - LaTeX decoding ...
+[200] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
+[292] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[292] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[292] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'ru-RU'
+[292] Biber.pm:4245> INFO - No sort tailoring available for locale 'ru-RU'
+[301] bbl.pm:660> INFO - Writing 'main_russian.bbl' with encoding 'UTF-8'
+[305] bbl.pm:763> INFO - Output to main_russian.bbl

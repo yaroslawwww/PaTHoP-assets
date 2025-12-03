@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.22)  5 NOV 2025 08:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.22)  18 NOV 2025 11:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1237,37 +1237,32 @@ Package hyperref Info: Link coloring ON on input line 53.
 LaTeX Font Warning: Font shape `T2A/ptm/b/n' undefined
 (Font)              using `T2A/ptm/m/n' instead on input line 7.
 
-
-Underfull \hbox (badness 1728) in paragraph at lines 14--15
-[]\T2A/ptm/b/n/14.4 Ключевые сло-ва: Prediction, predictability horizon, machine
- []
-
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 15.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 25.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 15.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 15.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 15.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 15.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}])
@@ -1282,66 +1277,136 @@ l.69 \newpage
  [2] [3{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}] [4]
 
 LaTeX Font Warning: Font shape `T2A/ptm/m/it' undefined
-(Font)              using `T2A/ptm/m/n' instead on input line 167.
+(Font)              using `T2A/ptm/m/n' instead on input line 162.
 
-[5] [6]
-Overfull \hbox (20.63887pt too wide) in paragraph at lines 263--270
-\T2A/ptm/m/it/12 ся как мо-ти-вы. Мо-ти-вом, со-от-вет-ству-ю-щим шаб-ло-ну $[]$, на-зы-ва-ет-ся век-тор $\OML/ztmcm/m/it/12 C[] \OT1/ztmcm/m/n/12 = (\OML/ztmcm/m/it/12 ^^Q[]; ^^Q[]; [] ; ^^Q[]\OT1/ztmcm/m/n/12 )$\T2A/ptm/m/it/12 ,
- []
-
-[7] [8] [9] [10]
-<../dtw/rows.png, id=154, 1084.05pt x 1300.86pt>
+[5] [6] [7] [8] [9]
+<../dtw/rows.png, id=143, 1084.05pt x 1300.86pt>
 File: ../dtw/rows.png Graphic file (type png)
 <use ../dtw/rows.png>
-Package pdftex.def Info: ../dtw/rows.png  used on input line 431.
+Package pdftex.def Info: ../dtw/rows.png  used on input line 387.
 (pdftex.def)             Requested size: 497.92325pt x 597.50964pt.
- [11] [12 <../dtw/rows.png>] [13]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 519.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<../Size_experiment/metrics_vs_general_size_best_experiments.png, id=185, 867.24pt x 1300.86pt>
-File: ../Size_experiment/metrics_vs_general_size_best_experiments.png Graphic file (type png)
-<use ../Size_experiment/metrics_vs_general_size_best_experiments.png>
-Package pdftex.def Info: ../Size_experiment/metrics_vs_general_size_best_experiments.png  used on input line 532.
-(pdftex.def)             Requested size: 398.3401pt x 597.50964pt.
- [14] [15 <../Size_experiment/metrics_vs_general_size_best_experiments.png>]
-<../Size_experiment/unlucky_experiments.png, id=197, 867.24pt x 1300.86pt>
-File: ../Size_experiment/unlucky_experiments.png Graphic file (type png)
-<use ../Size_experiment/unlucky_experiments.png>
-Package pdftex.def Info: ../Size_experiment/unlucky_experiments.png  used on input line 550.
-(pdftex.def)             Requested size: 398.3401pt x 597.50964pt.
- [16] [17 <../Size_experiment/unlucky_experiments.png>]
-<../deviations/Different_r_comparison_with_points.png, id=213, 867.24pt x 1156.32pt>
-File: ../deviations/Different_r_comparison_with_points.png Graphic file (type png)
-<use ../deviations/Different_r_comparison_with_points.png>
-Package pdftex.def Info: ../deviations/Different_r_comparison_with_points.png  used on input line 615.
-(pdftex.def)             Requested size: 398.3401pt x 531.11967pt.
- [18] [19 <../deviations/Different_r_comparison_with_points.png>] [20]
-<../mannayuitni/Augmentations_benefit_visualisation.png, id=238, 1300.86pt x 722.7pt>
-File: ../mannayuitni/Augmentations_benefit_visualisation.png Graphic file (type png)
-<use ../mannayuitni/Augmentations_benefit_visualisation.png>
-Package pdftex.def Info: ../mannayuitni/Augmentations_benefit_visualisation.png  used on input line 678.
-(pdftex.def)             Requested size: 497.92325pt x 276.62483pt.
- [21]
-Overfull \hbox (6.05852pt too wide) in paragraph at lines 699--701
-\T2A/ptm/m/it/12 мет-ри-ка, ос-но-ван-ная на срав-не-нии чис-лен-ных ап-прок-си-ма-ций опе-ра-то-ра Перрона-Фробениуса,
+
+Overfull \hbox (5.95847pt too wide) in paragraph at lines 402--437
+ [][] 
  []
 
-[22 <../mannayuitni/Augmentations_benefit_visualisation.png>] [23] [24]
-Overfull \hbox (32.47209pt too wide) in paragraph at lines 764--764
+[10] [11 <../dtw/rows.png>] [12]
+<../Size_experiment/metrics_vs_general_size_best_experiments.png, id=168, 867.24pt x 1300.86pt>
+File: ../Size_experiment/metrics_vs_general_size_best_experiments.png Graphic file (type png)
+<use ../Size_experiment/metrics_vs_general_size_best_experiments.png>
+Package pdftex.def Info: ../Size_experiment/metrics_vs_general_size_best_experiments.png  used on input line 493.
+(pdftex.def)             Requested size: 398.3401pt x 597.50964pt.
+<../Size_experiment/unlucky_experiments.png, id=170, 867.24pt x 1300.86pt>
+File: ../Size_experiment/unlucky_experiments.png Graphic file (type png)
+<use ../Size_experiment/unlucky_experiments.png>
+Package pdftex.def Info: ../Size_experiment/unlucky_experiments.png  used on input line 511.
+(pdftex.def)             Requested size: 398.3401pt x 597.50964pt.
+ [13] [14 <../Size_experiment/metrics_vs_general_size_best_experiments.png>] [15 <../Size_experiment/unlucky_experiments.png>] [16]
+<../deviations/Different_r_comparison_with_points.png, id=197, 867.24pt x 1156.32pt>
+File: ../deviations/Different_r_comparison_with_points.png Graphic file (type png)
+<use ../deviations/Different_r_comparison_with_points.png>
+Package pdftex.def Info: ../deviations/Different_r_comparison_with_points.png  used on input line 564.
+(pdftex.def)             Requested size: 398.3401pt x 531.11967pt.
+ [17 <../deviations/Different_r_comparison_with_points.png>]
+Overfull \hbox (5.39621pt too wide) in paragraph at lines 592--598
+ []\T2A/ptm/m/it/12 Алгоритм вы-чис-ле-ния мет-рик схо-же-сти.[] Пер-вый этап от-бо-ра:оператор Перрона-Фробениуса.
+ []
+
+
+Overfull \hbox (33.63036pt too wide) in paragraph at lines 592--598
+\T2A/ptm/m/it/12 Тео-ре-ти-че-ской ос-но-вой для срав-не-ния ди-на-ми-че-ских си-стем слу-жит опе-ра-тор Перрона-Фробениуса,
+ []
+
+[18] [19]
+<../mannayuitni/Augmentations_benefit_visualisation.png, id=227, 1300.86pt x 722.7pt>
+File: ../mannayuitni/Augmentations_benefit_visualisation.png Graphic file (type png)
+<use ../mannayuitni/Augmentations_benefit_visualisation.png>
+Package pdftex.def Info: ../mannayuitni/Augmentations_benefit_visualisation.png  used on input line 690.
+(pdftex.def)             Requested size: 497.92325pt x 276.62483pt.
+ [20]
+
+LaTeX Warning: Command \CYRI invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrs invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrh invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrd invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrya invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrz invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrb invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrv invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrn invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \cyrya invalid in math mode on input line 710.
+
+Missing character: There is no И in font zptmcm7t!
+Missing character: There is no с in font zptmcm7t!
+Missing character: There is no х in font zptmcm7t!
+Missing character: There is no о in font zptmcm7t!
+Missing character: There is no д in font zptmcm7t!
+Missing character: There is no я in font zptmcm7t!
+Missing character: There is no и in font zptmcm7t!
+Missing character: There is no з in font zptmcm7t!
+Missing character: There is no т in font zptmcm7t!
+Missing character: There is no р in font zptmcm7t!
+Missing character: There is no е in font zptmcm7t!
+Missing character: There is no б in font zptmcm7t!
+Missing character: There is no о in font zptmcm7t!
+Missing character: There is no в in font zptmcm7t!
+Missing character: There is no а in font zptmcm7t!
+Missing character: There is no н in font zptmcm7t!
+Missing character: There is no и in font zptmcm7t!
+Missing character: There is no я in font zptmcm7t!
+[21 <../mannayuitni/Augmentations_benefit_visualisation.png>] [22] [23]
+Overfull \hbox (32.47209pt too wide) in paragraph at lines 766--766
 []\T2A/ptm/m/it/12 Vasilii A. Gromov и Philip S. Baranov. ``Prediction after a Horizon of Predictability: Nonpredictable
  []
 
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 764.
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
-Overfull \hbox (11.13812pt too wide) in paragraph at lines 764--764
+
+Overfull \hbox (11.13812pt too wide) in paragraph at lines 766--766
 []\T2A/ptm/m/it/12 F. Takens. ``Detecting strange attractors in turbulence''. В: Dynamical Systems and Turbulence.
  []
 
-[25] (./main_russian.aux)
+[24] (./main_russian.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1355,18 +1420,18 @@ Package logreq Info: Writing requests to 'main_russian.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34401 strings out of 474222
- 637193 string characters out of 5748733
- 1939975 words of memory out of 5000000
- 55993 multiletter control sequences out of 15000+600000
- 590228 words of font info for 102 fonts, out of 8000000 for 9000
+ 34337 strings out of 474222
+ 635744 string characters out of 5748733
+ 1938975 words of memory out of 5000000
+ 55943 multiletter control sequences out of 15000+600000
+ 590711 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,93p,1216b,1766s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main_russian.pdf (26 pages, 4737387 bytes).
+ 84i,12n,93p,885b,1766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main_russian.pdf (25 pages, 4717003 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 291 compressed objects within 3 object streams
- 102 named destinations out of 1000 (max. 500000)
+ 352 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 95 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

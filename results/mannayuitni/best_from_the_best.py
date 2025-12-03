@@ -134,8 +134,8 @@ metric_names_display = ['RMSE', 'Unpredictable Points, %', 'MAPE']
 col_names = metric_names_orig + ['Parameter r']
 
 # Считываем только необходимые данные
-df_best = pd.read_csv('best.txt', header=None, names=col_names)
-df_random = pd.read_csv('random.txt', header=None, names=col_names)
+df_best = pd.read_csv('best_480.txt', header=None, names=col_names)
+df_random = pd.read_csv('random_480.txt', header=None, names=col_names)
 # df_best = pd.concat([df_best, df_random], axis=0)
 df_baselines = pd.read_csv('baselines.txt', header=None, names=metric_names_orig)
 rs = df_best['Parameter r']
@@ -145,7 +145,7 @@ for r in tqdm(rs):
 # print(scores)
 sorted_indices = np.argsort(scores)
 sorted_indices = list(sorted_indices)
-best_indices = sorted_indices[:10]
+best_indices = sorted_indices[:25]
 print(np.array(scores)[best_indices])
 print(np.array(rs)[best_indices])
 

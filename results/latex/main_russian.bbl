@@ -51,81 +51,6 @@
       \field{title}{Data Clustering: Algorithms and Applications}
       \field{year}{2013}
     \endentry
-    \entry{Balashova1991}{book}{}
-      \name{author}{1}{}{%
-        {{hash=aec1e9c1ddbf0b59a34c0eabb2aa3af9}{%
-           family={Balashova},
-           familyi={B\bibinitperiod},
-           given={Svetlana\bibnamedelima D.},
-           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {DGU Publishing House}%
-      }
-      \strng{namehash}{aec1e9c1ddbf0b59a34c0eabb2aa3af9}
-      \strng{fullhash}{aec1e9c1ddbf0b59a34c0eabb2aa3af9}
-      \strng{bibnamehash}{aec1e9c1ddbf0b59a34c0eabb2aa3af9}
-      \strng{authorbibnamehash}{aec1e9c1ddbf0b59a34c0eabb2aa3af9}
-      \strng{authornamehash}{aec1e9c1ddbf0b59a34c0eabb2aa3af9}
-      \strng{authorfullhash}{aec1e9c1ddbf0b59a34c0eabb2aa3af9}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Numerical Methods for Solving Differential and Integral Equations. Textbook}
-      \field{year}{1991}
-    \endentry
-    \entry{Berardi2018}{article}{}
-      \name{author}{6}{}{%
-        {{hash=f255912bd893f1fb3e843c45d12f4cd9}{%
-           family={Berardi},
-           familyi={B\bibinitperiod},
-           given={Vincent},
-           giveni={V\bibinitperiod}}}%
-        {{hash=a8ff6aece86d23e1d8f7937fca470dcd}{%
-           family={Carretero-González},
-           familyi={C\bibinithyphendelim G\bibinitperiod},
-           given={Ricardo},
-           giveni={R\bibinitperiod}}}%
-        {{hash=bed8869f7682e9b174d308fc312dc5bb}{%
-           family={Bellettiere},
-           familyi={B\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-        {{hash=21292491b9c49da0188bd6616c8146e5}{%
-           family={Adams},
-           familyi={A\bibinitperiod},
-           given={Marc\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=0d0df76c1408077af7aa2654aa4896d0}{%
-           family={Hughes},
-           familyi={H\bibinitperiod},
-           given={Suzanne},
-           giveni={S\bibinitperiod}}}%
-        {{hash=7d396e7933c5d5cd80cce4b6a1ed99a5}{%
-           family={Hovell},
-           familyi={H\bibinitperiod},
-           given={Melbourne},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{f0eb2c58e1b3f27da43c1bfef583db4e}
-      \strng{fullhash}{7880beed582471d373e8926c742c3ea0}
-      \strng{bibnamehash}{7880beed582471d373e8926c742c3ea0}
-      \strng{authorbibnamehash}{7880beed582471d373e8926c742c3ea0}
-      \strng{authornamehash}{f0eb2c58e1b3f27da43c1bfef583db4e}
-      \strng{authorfullhash}{7880beed582471d373e8926c742c3ea0}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Biomedical Informatics}
-      \field{month}{9}
-      \field{title}{{Markov Methodology for More Precise Assessments of Data-Intensive Behavioral Interventions}}
-      \field{volume}{85}
-      \field{year}{2018}
-      \field{pages}{93\bibrangedash 105}
-      \range{pages}{13}
-    \endentry
     \entry{Gilmore1984}{book}{}
       \name{author}{1}{}{%
         {{hash=416eeccea7dca0e4eefc7999ba90b062}{%
@@ -199,62 +124,37 @@
       \field{title}{Prediction after a Horizon of Predictability: Nonpredictable Points and Partial Multistep Prediction for Chaotic Time Series}
       \field{year}{2023}
     \endentry
-    \entry{Hateley2016}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b93b062363c742b0d3b07ebcfebd6b0f}{%
-           family={Hateley},
-           familyi={H\bibinitperiod},
-           given={James},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{b93b062363c742b0d3b07ebcfebd6b0f}
-      \strng{fullhash}{b93b062363c742b0d3b07ebcfebd6b0f}
-      \strng{bibnamehash}{b93b062363c742b0d3b07ebcfebd6b0f}
-      \strng{authorbibnamehash}{b93b062363c742b0d3b07ebcfebd6b0f}
-      \strng{authornamehash}{b93b062363c742b0d3b07ebcfebd6b0f}
-      \strng{authorfullhash}{b93b062363c742b0d3b07ebcfebd6b0f}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The Lorenz system}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb http://web.math.ucsb.edu/jhate-ley/paper/lorenz.pdf
-      \endverb
-      \verb{url}
-      \verb http://web.math.ucsb.edu/jhate-ley/paper/lorenz.pdf
-      \endverb
-    \endentry
-    \entry{KaplanYorke1979}{article}{}
+    \entry{LapkoChentsov2000}{book}{}
       \name{author}{2}{}{%
-        {{hash=26b4624c05377bbb985d33d6519e813f}{%
-           family={Kaplan},
-           familyi={K\bibinitperiod},
-           given={James\bibnamedelima L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=6182e68f7c9c52a8dc75c4afdde36dd6}{%
-           family={Yorke},
-           familyi={Y\bibinitperiod},
-           given={James\bibnamedelima A.},
-           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=fb1df4e9b145b9c12f156b118ca2cf7e}{%
+           family={Lapko},
+           familyi={L\bibinitperiod},
+           given={A.\bibnamedelimi V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=8cfbf1607ee885132eebebacd079388a}{%
+           family={Chentsov},
+           familyi={C\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
-      \strng{namehash}{2e73fc5adc21038614e99e2a06a098a2}
-      \strng{fullhash}{2e73fc5adc21038614e99e2a06a098a2}
-      \strng{bibnamehash}{2e73fc5adc21038614e99e2a06a098a2}
-      \strng{authorbibnamehash}{2e73fc5adc21038614e99e2a06a098a2}
-      \strng{authornamehash}{2e73fc5adc21038614e99e2a06a098a2}
-      \strng{authorfullhash}{2e73fc5adc21038614e99e2a06a098a2}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \list{location}{1}{%
+        {Novosibirsk, Russia}%
+      }
+      \list{publisher}{1}{%
+        {Nauka}%
+      }
+      \strng{namehash}{b6784cfca1a3ff81296d3915fd1b46ff}
+      \strng{fullhash}{b6784cfca1a3ff81296d3915fd1b46ff}
+      \strng{bibnamehash}{b6784cfca1a3ff81296d3915fd1b46ff}
+      \strng{authorbibnamehash}{b6784cfca1a3ff81296d3915fd1b46ff}
+      \strng{authornamehash}{b6784cfca1a3ff81296d3915fd1b46ff}
+      \strng{authorfullhash}{b6784cfca1a3ff81296d3915fd1b46ff}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Commun. Math. Phys.}
-      \field{title}{Preturbulence: A Regime Observed in a Fluid Flow Model of Lorenz}
-      \field{volume}{67}
-      \field{year}{1979}
-      \field{pages}{93\bibrangedash 108}
-      \range{pages}{16}
+      \field{title}{Nonparametric Information Processing Systems}
+      \field{year}{2000}
     \endentry
     \entry{MalinetskiyPotapov2002}{book}{}
       \name{author}{2}{}{%
@@ -406,6 +306,54 @@
       \field{title}{A dilated convolution network-based LSTM model for multi-step prediction of chaotic time series}
       \field{volume}{39}
       \field{year}{2019}
+    \endentry
+    \entry{Wu2021}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=4f134c73b070610b7d8d7553d5e2a345}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Tong},
+           giveni={T\bibinitperiod}}}%
+        {{hash=eb0dd7502208cacd04425ea852782986}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5cc4c55d3fdbcf15392c35d0dd143d0b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Junzhe},
+           giveni={J\bibinitperiod}}}%
+        {{hash=92561243e587b6da2d388a74a609f403}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tai},
+           giveni={T\bibinitperiod}}}%
+        {{hash=15a5322a1b261fe95ac6e04758acf39c}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ziwei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f4033e88b680ba7279a268e75f80b1d3}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Dahua},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c00c1d8ddf1eb573bb965be63acb610a}
+      \strng{fullhash}{f6e2f1141b0a986c061df2d194e7e276}
+      \strng{bibnamehash}{f6e2f1141b0a986c061df2d194e7e276}
+      \strng{authorbibnamehash}{f6e2f1141b0a986c061df2d194e7e276}
+      \strng{authornamehash}{c00c1d8ddf1eb573bb965be63acb610a}
+      \strng{authorfullhash}{f6e2f1141b0a986c061df2d194e7e276}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Density-aware Chamfer Distance as a Comprehensive Metric for Point Cloud Completion}
+      \field{volume}{34}
+      \field{year}{2021}
     \endentry
   \enddatalist
 \endrefsection
