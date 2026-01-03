@@ -8,10 +8,9 @@ metric_names_orig = ['RMSE', 'Unpredictable Points', 'MAPE']
 metric_names_display = ['RMSE', 'Unpredictable Points, %', 'MAPE']
 col_names = metric_names_orig + ['Parameter r']
 
-df_best = pd.read_csv('best_480_20.txt', header=None, names=col_names)
-df_best = df_best[:48]
-df_random = pd.read_csv('random.txt', header=None, names=col_names)
-df_baselines = pd.read_csv('baselines_20.txt', header=None, names=metric_names_orig)
+df_best = pd.read_csv('best_480_1.txt', header=None, names=col_names)
+df_random = pd.read_csv('random_480_1.txt', header=None, names=col_names)
+df_baselines = pd.read_csv('baseline_480_1.txt', header=None, names=metric_names_orig)
 
 for df in [df_best, df_random, df_baselines]:
     df['Unpredictable Points'] = df['Unpredictable Points'] * 100
@@ -79,5 +78,5 @@ labels = [
 fig.legend(handles, labels, loc='upper right', bbox_to_anchor=(0.98, 0.98), fontsize=12)
 
 plt.tight_layout(rect=[0, 0.03, 1, 0.95])
-plt.savefig('Augmentations_benefit_visualisation_20.png')
+plt.savefig('Augmentations_benefit_visualisation_1.png')
 plt.show()
