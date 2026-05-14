@@ -31,13 +31,15 @@ for suffix, alpha in alphas.items():
 
         # Aggregate and sort by added data volume
         df_c = df_combined.groupby('Donor_Size').mean(numeric_only=True).reset_index().sort_values('Donor_Size')
-        x = df_c['Donor_Size'].values
+
+        # Сдвигаем ось X на 10000
+        x = df_c['Donor_Size'].values + 10000
 
         for col_idx, metric in enumerate(metrics):
             y = df_c[f'{metric}_{suffix}'].values
 
             # Force spline through start point with weights
-            w = np.ones_like(y, dtype=float);
+            w = np.ones_like(y, dtype=float)
             w[0] = 1000.0
             spline = UnivariateSpline(x, y, w=w)
             spline.set_smoothing_factor(len(x) * np.var(y) * 0.5 + 1e-7)
@@ -47,19 +49,20 @@ for suffix, alpha in alphas.items():
             ys[0] = y[0]  # Exact match for left edge
 
             ax = axes[col_idx]
+            # Стандартная отрисовка для всех линий
             ax.plot(x, y, 'o', ms=4, alpha=0.3, color=colors[c_idx])
-            ax.plot(xs, ys, '-', lw=2, color=colors[c_idx], label=f'r={float(donor):.2f}')
+            ax.plot(xs, ys, '-', lw=2, color=colors[c_idx], label=f'r={float(donor):.4f}')
 
-    # Final formatting and gold star baseline
+        # Final formatting and gold star baseline
     for col_idx, metric in enumerate(metrics):
         ax = axes[col_idx]
 
-        # Highlight the starting point (0 added data)
+        # Highlight the starting point (сдвинута на 10000)
         y_start = df_base[f'{metric}_{suffix}'].mean()
-        ax.plot(0, y_start, '*', ms=15, color='gold', markeredgecolor='black', zorder=10, label='Baseline (10k)')
+        ax.plot(10000, y_start, '*', ms=15, color='gold', markeredgecolor='black', zorder=10, label='Baseline (10k)')
 
         ax.set_title(f'APRIORI: {metric.upper()}', fontsize=14, fontweight='bold')
-        ax.set_xlabel('Added Donor Size', fontsize=12)
+        ax.set_xlabel('General Size (10000 pure series + x donor)', fontsize=12)
         ax.grid(True, linestyle='--', alpha=0.5)
         ax.legend(fontsize=8, ncol=2)
         ax.margins(y=0.1)

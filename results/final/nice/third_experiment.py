@@ -11,123 +11,130 @@ alphas = {'01': '10', '03': '10/3'}
 metrics = ['rmse', 'np', 'mape']
 
 for suffix, alpha in alphas.items():
-    # Large 3x3 grid for the summary plot
-    fig_sum, axes_sum = plt.subplots(len(horizons), 3, figsize=(20, 15))
+    colors = plt.cm.tab20.colors  # Палитра для линий
 
-    # tab20 palette to handle up to 20 distinct donors (Exp3 has ~14 donors)
-    colors = plt.cm.tab20.colors
+    for h in horizons:
+        filename = f'h{h}_all.txt'
+        if not os.path.exists(filename):
+            continue
 
-    for row_idx, h in enumerate(horizons):
-        df = pd.read_csv(f'h{h}_all.txt', skiprows=1)
+        df = pd.read_csv(filename, skiprows=1)
 
-        # --- PREPARE HYBRID DATA ---
+        # --- ПОДГОТОВКА ДАННЫХ HYBRID ---
         df_mix = df[df['Experiment'] == 'EXP3_HYBRID'].copy()
         df_mix['Donor_R'] = df_mix['Donor_R'].fillna('None').astype(str).str.strip()
 
+        # Базовая точка (0 добавленных доноров)
         df_base = df_mix[df_mix['Donor_R'] == 'None']
-        donors = sorted([d for d in df_mix['Donor_R'].unique() if d != 'None'], key=float)
 
-        # --- PREPARE PURE DATA BASELINE (EXP1_CLEAR) ---
-        # We align EXP1 to EXP3 by calculating how much data was "added" past the base 10k
+        # Получаем всех доноров и разделяем на 2 группы
+        donors = [d for d in df_mix['Donor_R'].unique() if d != 'None']
+        donors_lt_29 = sorted([d for d in donors if float(d) < 29.0], key=float)
+        donors_ge_29 = sorted([d for d in donors if float(d) >= 29.0], key=float)
+
+        # --- ПОДГОТОВКА БАЗОВОЙ ЛИНИИ (ЧИСТОЕ РАСШИРЕНИЕ EXP1_CLEAR) ---
         df_clear = df[df['Experiment'] == 'EXP1_CLEAR'].copy()
-        df_clear['Donor_Size'] = df_clear['Recipient_Size'] - 10000
-        df_clear = df_clear[(df_clear['Donor_Size'] >= 0) & (df_clear['Donor_Size'] <= 30000)]
-        df_clear_c = df_clear.groupby('Donor_Size').mean(numeric_only=True).reset_index().sort_values('Donor_Size')
+        # Ограничиваем ось X от 10000 до 40000
+        df_clear = df_clear[(df_clear['Recipient_Size'] >= 10000) & (df_clear['Recipient_Size'] <= 40000)]
+        df_clear_c = df_clear.groupby('Recipient_Size').mean(numeric_only=True).reset_index().sort_values(
+            'Recipient_Size')
 
-        fig_ind, axes_ind = plt.subplots(1, 3, figsize=(20, 6))
+        # Создаем сетку 2x3: 2 ряда (группы доноров), 3 колонки (метрики)
+        fig, axes = plt.subplots(2, 3, figsize=(22, 14))
 
-        # Plot the EXP1_CLEAR Pure Expansion line first (Black Dashed)
-        x_clear = df_clear_c['Donor_Size'].values
-        for col_idx, metric in enumerate(metrics):
-            y_clear = df_clear_c[f'{metric}_{suffix}'].values
-            spline_c = UnivariateSpline(x_clear, y_clear)
-            spline_c.set_smoothing_factor(len(x_clear) * np.var(y_clear) * 0.5 + 1e-6)
+        donor_groups = [
+            (donors_lt_29, 'Donors R < 29', axes[0]),
+            (donors_ge_29, 'Donors R >= 29', axes[1])
+        ]
 
-            xs_c = np.linspace(x_clear.min(), x_clear.max(), 300)
-            ys_c = spline_c(xs_c)
+        for row_idx, (current_donors, group_title, ax_row) in enumerate(donor_groups):
 
-            axes_ind[col_idx].plot(xs_c, ys_c, '--', color='black', lw=3, label='Pure Recipient Expansion', zorder=10)
-            axes_sum[row_idx, col_idx].plot(xs_c, ys_c, '--', color='black', lw=3, label='Pure Recipient Exp',
-                                            zorder=10)
-
-        # Loop through each donor
-        for c_idx, donor in enumerate(donors):
-            df_d = df_mix[df_mix['Donor_R'] == donor]
-            df_combined = pd.concat([df_d, df_base])
-
-            # Grouping by Donor_Size (Added volume)
-            df_c = df_combined.groupby('Donor_Size').mean(numeric_only=True).reset_index()
-            df_c = df_c.sort_values('Donor_Size')
-            x = df_c['Donor_Size'].values
-
-            label_text = f'Donor r={float(donor):.4f}'
-
+            # 1. Отрисовка базовой линии чистого расширения (Черный пунктир)
+            x_clear = df_clear_c['Recipient_Size'].values
             for col_idx, metric in enumerate(metrics):
-                y = df_c[f'{metric}_{suffix}'].values
+                y_clear = df_clear_c[f'{metric}_{suffix}'].values
 
-                # Weight array to force the spline precisely through the starting point
-                w = np.ones_like(y, dtype=float)
-                w[0] = 1000.0
+                # Фиксируем сплайн в начальной точке
+                w_c = np.ones_like(y_clear, dtype=float)
+                w_c[0] = 1000.0
 
-                spline = UnivariateSpline(x, y, w=w)
-                spline.set_smoothing_factor(len(x) * np.var(y) * 0.5 + 1e-6)
+                spline_c = UnivariateSpline(x_clear, y_clear, w=w_c)
+                spline_c.set_smoothing_factor(len(x_clear) * np.var(y_clear) * 0.5 + 1e-6)
 
-                x_smooth = np.linspace(x.min(), x.max(), 300)
-                y_smooth = spline(x_smooth)
-                y_smooth[0] = y[0]
+                xs_c = np.linspace(x_clear.min(), x_clear.max(), 300)
+                ys_c = spline_c(xs_c)
+                ys_c[0] = y_clear[0]
 
-                # --- INDIVIDUAL PLOT ---
-                axes_ind[col_idx].plot(x, y, 'o', ms=4, alpha=0.3, color=colors[c_idx])
-                axes_ind[col_idx].plot(x_smooth, y_smooth, '-', lw=2, color=colors[c_idx], label=label_text)
+                ax_row[col_idx].plot(xs_c, ys_c, '--', color='black', lw=2.5, label='Pure Recipient Expansion',
+                                     zorder=10)
 
-                # --- SUMMARY PLOT ---
-                ax_sum = axes_sum[row_idx, col_idx]
-                ax_sum.plot(x, y, 'o', ms=2, alpha=0.3, color=colors[c_idx])
-                ax_sum.plot(x_smooth, y_smooth, '-', lw=2, color=colors[c_idx], label=label_text)
+            # 2. Отрисовка каждого донора из текущей группы
+            for c_idx, donor in enumerate(current_donors):
+                color = colors[c_idx % len(colors)]
+                df_d = df_mix[df_mix['Donor_R'] == donor]
+                df_combined = pd.concat([df_d, df_base])
 
-                # --- BASELINE HIGHLIGHT (x == 0) ---
-                zero_mask = x == 0
-                if zero_mask.any():
-                    axes_ind[col_idx].plot(x[zero_mask], y[zero_mask], '*', ms=14,
-                                           color='gold', markeredgecolor='black', alpha=0.9, zorder=15)
-                    ax_sum.plot(x[zero_mask], y[zero_mask], '*', ms=12,
-                                color='gold', markeredgecolor='black', alpha=0.9, zorder=15)
+                # Усреднение и сортировка
+                df_c = df_combined.groupby('Donor_Size').mean(numeric_only=True).reset_index().sort_values('Donor_Size')
 
-        # --- Format Individual Plot ---
-        for col_idx, metric in enumerate(metrics):
-            axes_ind[col_idx].plot([], [], '*', ms=12, markeredgecolor='black', color='gold',
-                                   label='Baseline (0 Donor)')
-            axes_ind[col_idx].set_title(metric.upper(), fontsize=14, fontweight='bold')
-            axes_ind[col_idx].set_xlabel('Added Donor Size', fontsize=12)
-            axes_ind[col_idx].grid(True, linestyle='--', alpha=0.6)
-            axes_ind[col_idx].margins(y=0.1)
-            # Use 2 columns for legend because 14 donors + baseline = too tall
-            axes_ind[col_idx].legend(fontsize=8, ncol=2)
+                # Прибавляем 10000 к размеру донора, чтобы получить общий размер
+                x = df_c['Donor_Size'].values + 10000
 
-        fig_ind.suptitle(f'Experiment 3: Horizon h={h}, α={alpha} (Base Recipient=10000)', fontsize=16)
-        fig_ind.tight_layout()
-        fig_ind.savefig(f'exp3_plots/h{h}_alpha_{alpha.replace("/", "_")}.png')
-        plt.close(fig_ind)
+                # Отсекаем точки, ушедшие за 40000
+                mask_x = x <= 40000
+                x = x[mask_x]
 
-        # --- Format Summary Plot ---
-        for col_idx, metric in enumerate(metrics):
-            ax_sum = axes_sum[row_idx, col_idx]
-            if row_idx == 0:
-                ax_sum.set_title(f'SUMMARY: {metric.upper()}', fontsize=14, fontweight='bold')
-            if row_idx == len(horizons) - 1:
-                ax_sum.set_xlabel('Added Donor Size', fontsize=12)
+                # Если в вашем полном файле есть донор точно "28.0" или "28.0000",
+                # и вы хотите его выделить жирным, раскомментируйте код ниже:
+                # is_target = (donor == '28.0' or donor == '28.0000')
 
-            ax_sum.set_ylabel(f'Horizon h={h}', fontsize=12, fontweight='bold')
-            ax_sum.grid(True, linestyle='--', alpha=0.5)
-            ax_sum.margins(y=0.1)
+                for col_idx, metric in enumerate(metrics):
+                    y = df_c[f'{metric}_{suffix}'].values[mask_x]
 
-            if col_idx == 0:
-                ax_sum.plot([], [], '*', ms=10, markeredgecolor='black', color='gold', label='Baseline')
-                ax_sum.legend(fontsize=8, ncol=2)
+                    # Веса для жесткой фиксации сплайна в точке x=10000
+                    w = np.ones_like(y, dtype=float)
+                    w[0] = 1000.0
+                    spline = UnivariateSpline(x, y, w=w)
+                    spline.set_smoothing_factor(len(x) * np.var(y) * 0.5 + 1e-6)
 
-    fig_sum.suptitle(f'Experiment 3: Hybrid Expansion Comparison (α={alpha}, Base Recipient=10000)', fontsize=18)
-    fig_sum.tight_layout(rect=[0, 0.03, 1, 0.96])
-    fig_sum.savefig(f'exp3_plots/summary_exp3_alpha_{alpha.replace("/", "_")}.png', dpi=200)
-    plt.close(fig_sum)
+                    xs = np.linspace(x.min(), x.max(), 300)
+                    ys = spline(xs)
+                    ys[0] = y[0]
 
-print("Done. Check 'exp3_plots' folder.")
+                    # Отрисовываем саму линию
+                    ax_row[col_idx].plot(xs, ys, '-', lw=2, color=color, label=f'r={float(donor):.4f}')
+
+                    # Отрисовываем ТОЧКИ ярко и без прозрачности (alpha=0.9, ms=5)
+                    ax_row[col_idx].plot(x, y, 'o', ms=5, alpha=0.9, color=color, markeredgecolor='white',
+                                         markeredgewidth=0.5, zorder=12)
+
+            # 3. Оформление графиков ряда
+            for col_idx, metric in enumerate(metrics):
+                ax = ax_row[col_idx]
+
+                # Золотая звезда Baseline (10k)
+                y_start = df_base[f'{metric}_{suffix}'].mean()
+                ax.plot(10000, y_start, '*', ms=15, color='gold', markeredgecolor='black', zorder=25,
+                        label='Baseline (10k)')
+
+                ax.set_title(f'{metric.upper()} ({group_title})', fontsize=14, fontweight='bold')
+
+                # Подписываем ось X только у нижнего ряда
+                if row_idx == 1:
+                    ax.set_xlabel('General Size (10000 pure series + x donor)', fontsize=12)
+
+                ax.grid(True, linestyle='--', alpha=0.5)
+
+                # ЖЕСТКАЯ ФИКСАЦИЯ ОСИ X (от 9500 до 40500 для отступов по краям)
+                ax.set_xlim(9000, 41000)
+
+                # Компактная легенда в 2 колонки
+                ax.legend(fontsize=8, ncol=2)
+                ax.margins(y=0.1)
+
+        fig.suptitle(f'Experiment 3: Hybrid Expansion (h={h}, alpha={alpha})', fontsize=18)
+        fig.tight_layout(rect=[0, 0.03, 1, 0.96])
+        fig.savefig(f'exp3_plots/h{h}_alpha_{alpha.replace("/", "_")}.png', dpi=200)
+        plt.close(fig)
+
+print("Done! Теперь точки (кружочки) на всех линиях сделаны яркими и непрозрачными.")
